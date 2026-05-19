@@ -16,10 +16,10 @@ This site tells the tale of:
 ## Development
 
 ```bash
-mise install           # Install Node.js & pnpm
-pnpm install          # Install dependencies
-pnpm start            # Start dev server at http://localhost:8080
-pnpm build            # Build to _site/
+mise install          # Install Node.js & aube
+aube install          # Install dependencies
+aubr start            # Start dev server at http://localhost:8080
+aubr build            # Build to _site/
 ```
 
 ## Contributing

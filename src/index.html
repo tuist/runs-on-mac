@@ -510,6 +510,42 @@
                 font-style: normal;
             }
 
+            .tuist-cta {
+                margin: 2rem auto 3rem;
+                padding: 1.5rem;
+                border: 2px solid #8b7355;
+                border-radius: 12px;
+                background: linear-gradient(135deg, #fcfbf7 0%, #f3eee4 100%);
+                box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+                text-align: center;
+            }
+
+            .tuist-cta-kicker {
+                color: #8b7355;
+                font-size: 12px;
+                letter-spacing: 0.12em;
+                text-transform: uppercase;
+                margin-bottom: 0.75rem;
+            }
+
+            .tuist-cta h3 {
+                font-family: "Baskerville", "Garamond", "Palatino", serif;
+                font-size: 1.8rem;
+                font-weight: normal;
+                color: #8b7355;
+                margin-bottom: 0.75rem;
+            }
+
+            .tuist-cta p {
+                margin: 0 auto 1.25rem;
+                max-width: 580px;
+                color: #3e3e3e;
+            }
+
+            .tuist-cta .contact-button {
+                display: inline-block;
+            }
+
             .yaml-key {
                 color: #0066cc;
             }
@@ -574,6 +610,14 @@
                 .code-container pre {
                     font-size: 11px;
                 }
+
+                .tuist-cta {
+                    padding: 1.25rem;
+                }
+
+                .tuist-cta h3 {
+                    font-size: 1.5rem;
+                }
             }
         </style>
     </head>
@@ -588,6 +632,30 @@
             </div>
 
             <h1>runs-on: mac</h1>
+
+            <div class="tuist-cta">
+                <div class="tuist-cta-kicker">
+                    Source-available runners, built in the open
+                </div>
+                <h3>
+                    <img
+                        src="/images/tuist-logo.png"
+                        alt=""
+                        class="provider-favicon"
+                    />Tuist Runners
+                </h3>
+                <p>
+                    Tuist is building its own Apple runners in the open: source
+                    available, shaped with early users, and iterated quickly
+                    from real feedback. If you want a runner provider that
+                    evolves with your team, get early access.
+                </p>
+                <a
+                    href="mailto:contact@tuist.dev?subject=Tuist%20Runners%20Early%20Access"
+                    class="contact-button"
+                    >Contact Tuist for early access →</a
+                >
+            </div>
 
             <div class="chapter">
                 <div class="chapter-title" id="chapter-one">
@@ -900,20 +968,20 @@
                     <div class="provider-tabs">
                         <div
                             class="provider-tab active"
-                            data-provider="namespace"
+                            data-provider="tuist"
                         >
+                            <img
+                                src="/images/tuist-logo.png"
+                                alt=""
+                                class="tab-favicon"
+                            />Tuist
+                        </div>
+                        <div class="provider-tab" data-provider="namespace">
                             <img
                                 src="https://namespace.so/favicon.svg"
                                 alt=""
                                 class="tab-favicon"
                             />Namespace
-                        </div>
-                        <div class="provider-tab" data-provider="cirrus">
-                            <img
-                                src="https://www.google.com/s2/favicons?domain=cirrus-runners.app&sz=32"
-                                alt=""
-                                class="tab-favicon"
-                            />Cirrus
                         </div>
                         <div class="provider-tab" data-provider="warpbuild">
                             <img
@@ -954,7 +1022,7 @@
 
 <span class="yaml-key">jobs:</span>
   <span class="yaml-key">build:</span>
-    <span class="runs-on-highlight"><span class="yaml-key">runs-on:</span> <span class="yaml-string" id="runner-label">namespace-profile-default-arm64</span></span>
+    <span class="runs-on-highlight"><span class="yaml-key">runs-on:</span> <span class="yaml-string" id="runner-label">tuist-runners-macos-arm64</span></span>
 
     <span class="yaml-key">steps:</span>
       - <span class="yaml-key">name:</span> <span class="yaml-string">Checkout code</span>
@@ -1026,21 +1094,21 @@
                 </div>
             </div>
 
-            <div class="recommendations">
-                <h2>Mac Runner Providers</h2>
-                <div class="disclaimer">
-                    Disclaimer: I list
+                <div class="recommendations">
+                    <h2>Mac Runner Providers</h2>
+                    <div class="disclaimer">
+                    Disclaimer: I recommend
                     <a
                         href="https://namespace.so?utm_source=runs-on-mac&utm_medium=referral&utm_campaign=provider-list"
                         target="_blank"
                         >Namespace.so</a
                     >
-                    first because I use them. They are currently the only
-                    provider with a programmatic interface/API to build upon,
-                    and their product and team are amazing to work with. The
-                    other providers listed below are also excellent choices
-                    depending on your specific needs.
-                </div>
+                    because I use them. They are currently the only provider
+                    with a programmatic interface/API to build upon, and their
+                    product and team are amazing to work with. The other
+                    providers listed below are also excellent choices depending
+                    on your specific needs.
+                    </div>
                 <div class="disclaimer">
                     Note: Provider descriptions are derived from their websites
                     and may become outdated. If you notice outdated information
@@ -1051,6 +1119,34 @@
                         target="_blank"
                         >this repository</a
                     >.
+                </div>
+                <div class="disclaimer">
+                    Want early access to Tuist Runners? Contact us at
+                    <a href="mailto:contact@tuist.dev">contact@tuist.dev</a>.
+                </div>
+
+                <div class="provider">
+                    <h3>
+                        <img
+                            src="/images/tuist-logo.png"
+                            alt=""
+                            class="provider-favicon"
+                        /><a href="https://tuist.dev" target="_blank">Tuist</a>
+                    </h3>
+                    <p>
+                        Tuist is building source-available runners for Apple
+                        platform workloads and iterating in the open with early
+                        users. Teams in early access can influence the roadmap
+                        with direct feedback while evaluating runners alongside
+                        the broader Tuist platform.
+                    </p>
+                    <div class="provider-actions">
+                        <a
+                            href="mailto:contact@tuist.dev?subject=Tuist%20Runners%20Early%20Access"
+                            class="contact-button"
+                            >Contact Tuist for early access →</a
+                        >
+                    </div>
                 </div>
 
                 <div class="provider">
@@ -1079,33 +1175,6 @@
                             target="_blank"
                             class="contact-button"
                             >Contact Namespace →</a
-                        >
-                    </div>
-                </div>
-
-                <div class="provider">
-                    <h3>
-                        <img
-                            src="https://www.google.com/s2/favicons?domain=cirrus-runners.app&sz=32"
-                            alt=""
-                            class="provider-favicon"
-                        /><a
-                            href="https://cirrus-runners.app?utm_source=runs-on-mac&utm_medium=referral&utm_campaign=provider-list"
-                            target="_blank"
-                            >Cirrus Runners</a
-                        >
-                    </h3>
-                    <p>
-                        Managed large runners featuring macOS M4 Pro with
-                        proprietary virtualization technology. Fixed monthly
-                        pricing with unlimited minutes and limited concurrency.
-                    </p>
-                    <div class="provider-actions">
-                        <a
-                            href="https://cirrus-runners.app?utm_source=runs-on-mac&utm_medium=referral&utm_campaign=contact"
-                            target="_blank"
-                            class="contact-button"
-                            >Contact Cirrus →</a
                         >
                     </div>
                 </div>
@@ -1378,8 +1447,8 @@
         <script>
             // Provider runner labels mapping
             const runnerLabels = {
+                tuist: "tuist-runners-macos-arm64",
                 namespace: "namespace-profile-default-arm64",
-                cirrus: "macos-m4-pro",
                 warpbuild: "warp-macos-latest-arm64-6x",
                 blaze: "blaze/macos-14",
                 depot: "depot-macos-m2",

@@ -256,7 +256,8 @@ packages:
   fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
-    os: [darwin]
+    os:
+    - darwin
 
   glob-parent@5.1.2:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
@@ -577,9 +578,9 @@ snapshots:
       urlpattern-polyfill: 10.1.0
       ws: 8.18.3
     transitivePeerDependencies:
-      - bufferutil
-      - supports-color
-      - utf-8-validate
+    - bufferutil
+    - supports-color
+    - utf-8-validate
 
   '@11ty/eleventy-plugin-bundle@3.0.7(posthtml@0.16.7)':
     dependencies:
@@ -587,8 +588,8 @@ snapshots:
       debug: 4.4.3
       posthtml-match-helper: 2.0.3(posthtml@0.16.7)
     transitivePeerDependencies:
-      - posthtml
-      - supports-color
+    - posthtml
+    - supports-color
 
   '@11ty/eleventy-utils@2.0.7': {}
 
@@ -628,9 +629,9 @@ snapshots:
       slugify: 1.6.6
       tinyglobby: 0.2.15
     transitivePeerDependencies:
-      - bufferutil
-      - supports-color
-      - utf-8-validate
+    - bufferutil
+    - supports-color
+    - utf-8-validate
 
   '@11ty/lodash-custom@4.17.21': {}
 
@@ -816,7 +817,7 @@ snapshots:
       statuses: 2.0.1
       unpipe: 1.0.0
     transitivePeerDependencies:
-      - supports-color
+    - supports-color
 
   fresh@2.0.0: {}
 
@@ -1031,7 +1032,7 @@ snapshots:
       range-parser: 1.2.1
       statuses: 2.0.2
     transitivePeerDependencies:
-      - supports-color
+    - supports-color
 
   setprototypeof@1.2.0: {}
 
