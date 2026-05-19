@@ -84,5 +84,5 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy ./_site --project-name=runs-on-mac --branch=main --commit-dirty=true
+          command: pages deploy ./_site --project-name=runs-on-mac --branch=production --commit-dirty=true
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}

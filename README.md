@@ -25,7 +25,7 @@ aubr deploy           # Build and deploy to Cloudflare Pages
 
 ## Deployment
 
-Pushes to `main` deploy to Cloudflare Pages through GitHub Actions and Wrangler.
+Pushes to `main` deploy to the Cloudflare Pages `production` environment through GitHub Actions and Wrangler.
 
 Required repository secrets:
 - `CLOUDFLARE_ACCOUNT_ID`

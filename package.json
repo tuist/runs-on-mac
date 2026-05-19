@@ -5,7 +5,7 @@
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy",
-    "deploy": "aube run build && wrangler pages deploy ./_site --project-name=runs-on-mac --branch=main --commit-dirty=true"
+    "deploy": "aube run build && wrangler pages deploy ./_site --project-name=runs-on-mac --branch=production --commit-dirty=true"
   },
   "keywords": ["ci", "runners", "mac"],
   "author": "",
