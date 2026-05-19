@@ -20,7 +20,21 @@ mise install          # Install Node.js & aube
 aube install          # Install dependencies
 aubr start            # Start dev server at http://localhost:8080
 aubr build            # Build to _site/
+aubr deploy           # Build and deploy to Cloudflare Pages
 ```
+
+## Deployment
+
+Pushes to `main` deploy to Cloudflare Pages through GitHub Actions and Wrangler.
+
+Required repository secrets:
+- `CLOUDFLARE_ACCOUNT_ID`
+- `CLOUDFLARE_API_TOKEN`
+
+Expected Cloudflare Pages project:
+- `runs-on-mac`
+
+If your Pages project uses a different name, update both `wrangler.toml` and `.github/workflows/website.yml`.
 
 ## Contributing
 
