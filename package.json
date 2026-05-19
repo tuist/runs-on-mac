@@ -4,12 +4,21 @@
   "description": "The story of CI and the runs-on revolution",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy"
+    "build": "eleventy",
+    "deploy": "aube run build && wrangler pages deploy ./_site --project-name=runs-on-mac --branch=production --commit-dirty=true"
   },
   "keywords": ["ci", "runners", "mac"],
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0"
+    "@11ty/eleventy": "^3.0.0",
+    "wrangler": "^4.0.0"
+  },
+  "aube": {
+    "allowBuilds": {
+      "esbuild": true,
+      "sharp": true,
+      "workerd": true
+    }
   }
 }
