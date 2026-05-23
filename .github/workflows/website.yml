@@ -22,7 +22,7 @@ jobs:
           cache: true
 
       - name: Restore aube store
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: ~/.local/share/aube/store
           key: aube-store-${{ runner.os }}-${{ hashFiles('aube-lock.yaml') }}
@@ -63,7 +63,7 @@ jobs:
           cache: true
 
       - name: Restore aube store
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: ~/.local/share/aube/store
           key: aube-store-${{ runner.os }}-${{ hashFiles('aube-lock.yaml') }}
