@@ -36,7 +36,7 @@ jobs:
         run: aube run build
 
       - name: Upload built site
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: website-dist
           path: _site
@@ -74,7 +74,7 @@ jobs:
         run: aube ci
 
       - name: Download built site
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: website-dist
           path: _site
